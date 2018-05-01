@@ -36,8 +36,14 @@
             this.RbtnSuma = new System.Windows.Forms.RadioButton();
             this.RbtnResta = new System.Windows.Forms.RadioButton();
             this.CintaMT = new System.Windows.Forms.DataGridView();
-            this.btnIniciar = new System.Windows.Forms.Button();
+            this.btnPaso = new System.Windows.Forms.Button();
             this.lblAviso = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblestado = new System.Windows.Forms.Label();
+            this.btnInciarM = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblPasos = new System.Windows.Forms.Label();
+            this.btnReiniciar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.CintaMT)).BeginInit();
             this.SuspendLayout();
             // 
@@ -118,36 +124,100 @@
             this.CintaMT.ColumnHeadersVisible = false;
             this.CintaMT.Location = new System.Drawing.Point(145, 68);
             this.CintaMT.Name = "CintaMT";
+            this.CintaMT.ReadOnly = true;
             this.CintaMT.RowHeadersVisible = false;
             this.CintaMT.Size = new System.Drawing.Size(506, 51);
             this.CintaMT.TabIndex = 7;
             // 
-            // btnIniciar
+            // btnPaso
             // 
-            this.btnIniciar.Location = new System.Drawing.Point(316, 21);
-            this.btnIniciar.Name = "btnIniciar";
-            this.btnIniciar.Size = new System.Drawing.Size(160, 23);
-            this.btnIniciar.TabIndex = 8;
-            this.btnIniciar.Text = "Go!";
-            this.btnIniciar.UseVisualStyleBackColor = true;
-            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
+            this.btnPaso.Location = new System.Drawing.Point(439, 20);
+            this.btnPaso.Name = "btnPaso";
+            this.btnPaso.Size = new System.Drawing.Size(160, 23);
+            this.btnPaso.TabIndex = 8;
+            this.btnPaso.Text = "Paso";
+            this.btnPaso.UseVisualStyleBackColor = true;
+            this.btnPaso.Click += new System.EventHandler(this.btnIniciar_Click);
             // 
             // lblAviso
             // 
             this.lblAviso.AutoSize = true;
-            this.lblAviso.Location = new System.Drawing.Point(326, 150);
+            this.lblAviso.Location = new System.Drawing.Point(12, 222);
             this.lblAviso.Name = "lblAviso";
             this.lblAviso.Size = new System.Drawing.Size(35, 13);
             this.lblAviso.TabIndex = 9;
             this.lblAviso.Text = "label2";
+            this.lblAviso.Visible = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(145, 126);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(46, 13);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Estado :";
+            // 
+            // lblestado
+            // 
+            this.lblestado.AutoSize = true;
+            this.lblestado.Location = new System.Drawing.Point(192, 126);
+            this.lblestado.Name = "lblestado";
+            this.lblestado.Size = new System.Drawing.Size(55, 13);
+            this.lblestado.TabIndex = 11;
+            this.lblestado.Text = "aqui estoy";
+            // 
+            // btnInciarM
+            // 
+            this.btnInciarM.Location = new System.Drawing.Point(288, 20);
+            this.btnInciarM.Name = "btnInciarM";
+            this.btnInciarM.Size = new System.Drawing.Size(127, 23);
+            this.btnInciarM.TabIndex = 12;
+            this.btnInciarM.Text = "Iniciar Maquina";
+            this.btnInciarM.UseVisualStyleBackColor = true;
+            this.btnInciarM.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(263, 126);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(45, 13);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Pasos : ";
+            // 
+            // lblPasos
+            // 
+            this.lblPasos.AutoSize = true;
+            this.lblPasos.Location = new System.Drawing.Point(315, 126);
+            this.lblPasos.Name = "lblPasos";
+            this.lblPasos.Size = new System.Drawing.Size(58, 13);
+            this.lblPasos.TabIndex = 14;
+            this.lblPasos.Text = "yo tambien";
+            // 
+            // btnReiniciar
+            // 
+            this.btnReiniciar.Location = new System.Drawing.Point(615, 19);
+            this.btnReiniciar.Name = "btnReiniciar";
+            this.btnReiniciar.Size = new System.Drawing.Size(133, 23);
+            this.btnReiniciar.TabIndex = 15;
+            this.btnReiniciar.Text = "Reiniciar";
+            this.btnReiniciar.UseVisualStyleBackColor = true;
+            this.btnReiniciar.Click += new System.EventHandler(this.btnReiniciar_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(677, 244);
+            this.ClientSize = new System.Drawing.Size(760, 244);
+            this.Controls.Add(this.btnReiniciar);
+            this.Controls.Add(this.lblPasos);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.btnInciarM);
+            this.Controls.Add(this.lblestado);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.lblAviso);
-            this.Controls.Add(this.btnIniciar);
+            this.Controls.Add(this.btnPaso);
             this.Controls.Add(this.CintaMT);
             this.Controls.Add(this.RbtnResta);
             this.Controls.Add(this.RbtnSuma);
@@ -174,8 +244,14 @@
         private System.Windows.Forms.RadioButton RbtnSuma;
         private System.Windows.Forms.RadioButton RbtnResta;
         private System.Windows.Forms.DataGridView CintaMT;
-        private System.Windows.Forms.Button btnIniciar;
+        private System.Windows.Forms.Button btnPaso;
         private System.Windows.Forms.Label lblAviso;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblestado;
+        private System.Windows.Forms.Button btnInciarM;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblPasos;
+        private System.Windows.Forms.Button btnReiniciar;
     }
 }
 
