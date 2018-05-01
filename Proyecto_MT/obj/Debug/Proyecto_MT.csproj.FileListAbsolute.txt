@@ -1,0 +1,9 @@
+C:\Users\ASUS\Documents\GitHub\ProyectoMT\Proyecto_MT\bin\Debug\Proyecto_MT.exe.config
+C:\Users\ASUS\Documents\GitHub\ProyectoMT\Proyecto_MT\bin\Debug\Proyecto_MT.exe
+C:\Users\ASUS\Documents\GitHub\ProyectoMT\Proyecto_MT\bin\Debug\Proyecto_MT.pdb
+C:\Users\ASUS\Documents\GitHub\ProyectoMT\Proyecto_MT\obj\Debug\Proyecto_MT.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\Documents\GitHub\ProyectoMT\Proyecto_MT\obj\Debug\Proyecto_MT.Form1.resources
+C:\Users\ASUS\Documents\GitHub\ProyectoMT\Proyecto_MT\obj\Debug\Proyecto_MT.Properties.Resources.resources
+C:\Users\ASUS\Documents\GitHub\ProyectoMT\Proyecto_MT\obj\Debug\Proyecto_MT.csproj.GenerateResource.Cache
+C:\Users\ASUS\Documents\GitHub\ProyectoMT\Proyecto_MT\obj\Debug\Proyecto_MT.exe
+C:\Users\ASUS\Documents\GitHub\ProyectoMT\Proyecto_MT\obj\Debug\Proyecto_MT.pdb
