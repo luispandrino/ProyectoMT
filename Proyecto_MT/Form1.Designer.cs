@@ -66,7 +66,7 @@
             // RbtnPalindromo
             // 
             this.RbtnPalindromo.AutoSize = true;
-            this.RbtnPalindromo.Location = new System.Drawing.Point(12, 102);
+            this.RbtnPalindromo.Location = new System.Drawing.Point(12, 68);
             this.RbtnPalindromo.Name = "RbtnPalindromo";
             this.RbtnPalindromo.Size = new System.Drawing.Size(77, 17);
             this.RbtnPalindromo.TabIndex = 2;
@@ -77,7 +77,7 @@
             // RbtnCopiar
             // 
             this.RbtnCopiar.AutoSize = true;
-            this.RbtnCopiar.Location = new System.Drawing.Point(12, 126);
+            this.RbtnCopiar.Location = new System.Drawing.Point(12, 92);
             this.RbtnCopiar.Name = "RbtnCopiar";
             this.RbtnCopiar.Size = new System.Drawing.Size(112, 17);
             this.RbtnCopiar.TabIndex = 3;
@@ -88,7 +88,7 @@
             // RbtnMultiplicacion
             // 
             this.RbtnMultiplicacion.AutoSize = true;
-            this.RbtnMultiplicacion.Location = new System.Drawing.Point(12, 150);
+            this.RbtnMultiplicacion.Location = new System.Drawing.Point(12, 116);
             this.RbtnMultiplicacion.Name = "RbtnMultiplicacion";
             this.RbtnMultiplicacion.Size = new System.Drawing.Size(89, 17);
             this.RbtnMultiplicacion.TabIndex = 4;
@@ -99,7 +99,7 @@
             // RbtnSuma
             // 
             this.RbtnSuma.AutoSize = true;
-            this.RbtnSuma.Location = new System.Drawing.Point(12, 174);
+            this.RbtnSuma.Location = new System.Drawing.Point(12, 140);
             this.RbtnSuma.Name = "RbtnSuma";
             this.RbtnSuma.Size = new System.Drawing.Size(86, 17);
             this.RbtnSuma.TabIndex = 5;
@@ -110,7 +110,7 @@
             // RbtnResta
             // 
             this.RbtnResta.AutoSize = true;
-            this.RbtnResta.Location = new System.Drawing.Point(12, 198);
+            this.RbtnResta.Location = new System.Drawing.Point(12, 164);
             this.RbtnResta.Name = "RbtnResta";
             this.RbtnResta.Size = new System.Drawing.Size(87, 17);
             this.RbtnResta.TabIndex = 6;
@@ -126,7 +126,7 @@
             this.CintaMT.Name = "CintaMT";
             this.CintaMT.ReadOnly = true;
             this.CintaMT.RowHeadersVisible = false;
-            this.CintaMT.Size = new System.Drawing.Size(506, 51);
+            this.CintaMT.Size = new System.Drawing.Size(603, 51);
             this.CintaMT.TabIndex = 7;
             // 
             // btnPaso
@@ -142,7 +142,7 @@
             // lblAviso
             // 
             this.lblAviso.AutoSize = true;
-            this.lblAviso.Location = new System.Drawing.Point(12, 222);
+            this.lblAviso.Location = new System.Drawing.Point(12, 197);
             this.lblAviso.Name = "lblAviso";
             this.lblAviso.Size = new System.Drawing.Size(35, 13);
             this.lblAviso.TabIndex = 9;
@@ -163,9 +163,9 @@
             this.lblestado.AutoSize = true;
             this.lblestado.Location = new System.Drawing.Point(192, 126);
             this.lblestado.Name = "lblestado";
-            this.lblestado.Size = new System.Drawing.Size(55, 13);
+            this.lblestado.Size = new System.Drawing.Size(10, 13);
             this.lblestado.TabIndex = 11;
-            this.lblestado.Text = "aqui estoy";
+            this.lblestado.Text = ".";
             // 
             // btnInciarM
             // 
@@ -191,9 +191,9 @@
             this.lblPasos.AutoSize = true;
             this.lblPasos.Location = new System.Drawing.Point(315, 126);
             this.lblPasos.Name = "lblPasos";
-            this.lblPasos.Size = new System.Drawing.Size(58, 13);
+            this.lblPasos.Size = new System.Drawing.Size(10, 13);
             this.lblPasos.TabIndex = 14;
-            this.lblPasos.Text = "yo tambien";
+            this.lblPasos.Text = ".";
             // 
             // btnReiniciar
             // 
@@ -209,7 +209,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(760, 244);
+            this.ClientSize = new System.Drawing.Size(760, 216);
             this.Controls.Add(this.btnReiniciar);
             this.Controls.Add(this.lblPasos);
             this.Controls.Add(this.label3);
@@ -227,7 +227,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtCadena);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Simulador Maquina de Turing";
             ((System.ComponentModel.ISupportInitialize)(this.CintaMT)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
