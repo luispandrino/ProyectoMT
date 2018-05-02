@@ -462,6 +462,7 @@ namespace Proyecto_MT
 
                                 CintaMT.Rows[0].Cells[a - 1].Style.BackColor = Color.White;
                             }
+
                         }
                         if (aux == "b")
                         {
@@ -892,6 +893,219 @@ namespace Proyecto_MT
             }
             if (RbtnMultiplicacion.Checked)
             {
+                switch (contador)
+                {
+                    case (0):
+                        lblPasos.Text = pasos.ToString();
+                        lblestado.Text = "q0";
+                        aux = CintaMT.Rows[0].Cells[cabezal].Value.ToString();
+                        if (aux == "1")
+                        {
+
+                            CintaMT.Rows[0].Cells[cabezal].Value = "B";
+                            CintaMT.Rows[0].Cells[cabezal].Style.BackColor = Color.Yellow;
+                            contador ++;
+                            cabezal++;
+                            if (escribir)
+                            {
+                                int a = cabezal - 1;
+
+                                CintaMT.Rows[0].Cells[a - 1].Style.BackColor = Color.White;
+                            }
+                            escribir = true;
+                        }
+                        if (aux == "x")
+                        {
+                            CintaMT.Rows[0].Cells[cabezal - 1].Style.BackColor = Color.White;
+                            CintaMT.Rows[0].Cells[cabezal].Style.BackColor = Color.Yellow;
+                            cabezal++;
+                            pasos++;
+                            contador =  8; 
+
+                        }
+                        break;
+                    case (1):
+                        lblPasos.Text = pasos.ToString();
+                        lblestado.Text = "q1";
+                        aux = CintaMT.Rows[0].Cells[cabezal].Value.ToString();
+                        switch (aux)
+                        {
+                            case ("1"):
+
+                                CintaMT.Rows[0].Cells[cabezal - 1].Style.BackColor = Color.White;
+                                CintaMT.Rows[0].Cells[cabezal].Style.BackColor = Color.Yellow;
+                                cabezal++;
+                                pasos++;
+
+                                break;
+                            case ("x"):
+                                CintaMT.Rows[0].Cells[cabezal - 1].Style.BackColor = Color.White;
+                                CintaMT.Rows[0].Cells[cabezal].Style.BackColor = Color.Yellow;
+                                cabezal++;
+                                pasos++;
+                                contador++;
+                                break;
+                        }
+                        break;
+                    case (2):
+                        lblPasos.Text = pasos.ToString();
+                        lblestado.Text = "q2";
+                        aux = CintaMT.Rows[0].Cells[cabezal].Value.ToString();
+                        switch (aux)
+                        {
+                            case ("1"):
+
+                                CintaMT.Rows[0].Cells[cabezal - 1].Style.BackColor = Color.White;
+                                CintaMT.Rows[0].Cells[cabezal].Value = "B";
+                                CintaMT.Rows[0].Cells[cabezal].Style.BackColor = Color.Yellow;
+                                contador++;
+                                cabezal++;
+
+                                break;
+                            case ("="):
+                                CintaMT.Rows[0].Cells[cabezal - 1].Style.BackColor = Color.White;
+                                CintaMT.Rows[0].Cells[cabezal].Style.BackColor = Color.Yellow;
+                                cabezal--;
+                                pasos++;
+                                contador = 6;
+                                break;
+                        }
+                        break;
+                    case (3):
+                        lblPasos.Text = pasos.ToString();
+                        lblestado.Text = "q3";
+                        aux = CintaMT.Rows[0].Cells[cabezal].Value.ToString();
+                        switch (aux)
+                        {
+                            case ("1"):
+
+                                CintaMT.Rows[0].Cells[cabezal - 1].Style.BackColor = Color.White;
+                                CintaMT.Rows[0].Cells[cabezal].Style.BackColor = Color.Yellow;
+                                cabezal++;
+                                pasos++;
+
+                                break;
+                            case ("="):
+                                CintaMT.Rows[0].Cells[cabezal - 1].Style.BackColor = Color.White;
+                                CintaMT.Rows[0].Cells[cabezal].Style.BackColor = Color.Yellow;
+                                cabezal++;
+                                pasos++;
+                                contador++;
+                                break;
+                        }
+                        break;
+                    case (4):
+                        lblPasos.Text = pasos.ToString();
+                        lblestado.Text = "q4";
+                        aux = CintaMT.Rows[0].Cells[cabezal].Value.ToString();
+                        switch (aux)
+                        {
+                            case ("1"):
+
+                                CintaMT.Rows[0].Cells[cabezal - 1].Style.BackColor = Color.White;
+                                CintaMT.Rows[0].Cells[cabezal].Style.BackColor = Color.Yellow;
+                                cabezal++;
+                                pasos++;
+
+                                break;
+                            case ("B"):
+                                CintaMT.Rows[0].Cells[cabezal - 1].Style.BackColor = Color.White;
+                                CintaMT.Rows[0].Cells[cabezal].Value = "1";
+                                CintaMT.Rows[0].Cells[cabezal].Style.BackColor = Color.Yellow;
+                                cabezal--;
+                                pasos++;
+                                contador++;
+                                break;
+                        }
+                        break;
+                    case (5):
+                        lblPasos.Text = pasos.ToString();
+                        lblestado.Text = "q5";
+                        aux = CintaMT.Rows[0].Cells[cabezal].Value.ToString();
+                        switch (aux)
+                        {
+                            case ("1"):
+
+                                CintaMT.Rows[0].Cells[cabezal + 1].Style.BackColor = Color.White;
+                                CintaMT.Rows[0].Cells[cabezal].Style.BackColor = Color.Yellow;
+                                cabezal--;
+                                pasos++;
+
+                                break;
+                            case ("="):
+
+                                CintaMT.Rows[0].Cells[cabezal + 1].Style.BackColor = Color.White;
+                                CintaMT.Rows[0].Cells[cabezal].Style.BackColor = Color.Yellow;
+                                cabezal--;
+                                pasos++;
+
+                                break;
+                            case ("B"):
+                                CintaMT.Rows[0].Cells[cabezal + 1].Style.BackColor = Color.White;
+                                CintaMT.Rows[0].Cells[cabezal].Value = "1";
+                                CintaMT.Rows[0].Cells[cabezal].Style.BackColor = Color.Yellow;
+                                cabezal++;
+                                pasos++;
+                                contador = 2;
+                                break;
+                        }
+                        break;
+                    case (6):
+                        lblPasos.Text = pasos.ToString();
+                        lblestado.Text = "q6";
+                        aux = CintaMT.Rows[0].Cells[cabezal].Value.ToString();
+                        if (aux == "1")
+                        {
+
+                            CintaMT.Rows[0].Cells[cabezal + 1].Style.BackColor = Color.White;
+                            CintaMT.Rows[0].Cells[cabezal].Style.BackColor = Color.Yellow;
+                            contador++;
+                            cabezal--;
+                        }
+                        break;
+                    case (7):
+                        lblPasos.Text = pasos.ToString();
+                        lblestado.Text = "q7";
+                        aux = CintaMT.Rows[0].Cells[cabezal].Value.ToString();
+                        switch (aux)
+                        {
+                            case ("1"):
+
+                                CintaMT.Rows[0].Cells[cabezal + 1].Style.BackColor = Color.White;
+                                CintaMT.Rows[0].Cells[cabezal].Style.BackColor = Color.Yellow;
+                                cabezal--;
+                                pasos++;
+
+                                break;
+                            case ("x"):
+
+                                CintaMT.Rows[0].Cells[cabezal + 1].Style.BackColor = Color.White;
+                                CintaMT.Rows[0].Cells[cabezal].Style.BackColor = Color.Yellow;
+                                cabezal--;
+                                pasos++;
+
+                                break;
+                            case ("B"):
+                                CintaMT.Rows[0].Cells[cabezal + 1].Style.BackColor = Color.White;
+                                CintaMT.Rows[0].Cells[cabezal].Value = "1";
+                                CintaMT.Rows[0].Cells[cabezal].Style.BackColor = Color.Yellow;
+                                cabezal++;
+                                pasos++;
+                                contador = 0;
+                                break;
+                        }
+                        break;
+                    case (8):
+                        lblPasos.Text = pasos.ToString();
+                        lblestado.Text = "q8";
+                        CintaMT.Rows[0].Cells[cabezal - 1].Style.BackColor = Color.White;
+                        CintaMT.Rows[0].Cells[cabezal].Style.BackColor = Color.Yellow;
+                        pasos++;
+                        lblAviso.Visible = true;
+                        lblAviso.Text = "TERMINO";
+                        break;
+
+                }
 
             }
             if (RbtnSuma.Checked)
@@ -921,6 +1135,12 @@ namespace Proyecto_MT
 
                             else if (aux == "+")
                             {
+                                if (datos[0] == "+")
+                                {
+                                    lblAviso.Visible = true;
+                                    lblAviso.Text = "la cadena no es valida";
+                                    break;
+                                }
                                 CintaMT.Rows[0].Cells[cabezal - 1].Style.BackColor = Color.White;
                                 CintaMT.Rows[0].Cells[cabezal].Value = "B";
                                 CintaMT.Rows[0].Cells[cabezal].Style.BackColor = Color.Yellow;
@@ -1074,6 +1294,31 @@ namespace Proyecto_MT
             }
             if (RbtnMultiplicacion.Checked)
             {
+                if (txtCadena.Text != "")
+                {
+                    cadena = txtCadena.Text + "=";
+                    for (int i = 0; i < txtCadena.TextLength * 20; i++)
+                    {
+                        cadena = cadena + "B";
+                    }
+                    datos = new string[cadena.Length * 20];
+                    cabezal = 0;
+
+                    for (int i = 0; i < cadena.Length; i++)
+                    {
+                        datos[i] = cadena[i].ToString();
+                        CintaMT.Columns.Add(i.ToString(), i.ToString());
+                        CintaMT[i, 0].Value = datos[i];
+                    }
+
+
+                }
+                else
+                {
+                    lblAviso.Visible = true;
+                    lblAviso.Text = "la cadena no es valida";
+
+                }
 
             }
             if (RbtnSuma.Checked)
