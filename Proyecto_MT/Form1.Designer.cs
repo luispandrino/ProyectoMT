@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtCadena = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.RbtnPalindromo = new System.Windows.Forms.RadioButton();
@@ -44,6 +45,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.lblPasos = new System.Windows.Forms.Label();
             this.btnReiniciar = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btnRapido = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.CintaMT)).BeginInit();
             this.SuspendLayout();
             // 
@@ -131,9 +134,9 @@
             // 
             // btnPaso
             // 
-            this.btnPaso.Location = new System.Drawing.Point(439, 20);
+            this.btnPaso.Location = new System.Drawing.Point(454, 23);
             this.btnPaso.Name = "btnPaso";
-            this.btnPaso.Size = new System.Drawing.Size(160, 23);
+            this.btnPaso.Size = new System.Drawing.Size(91, 23);
             this.btnPaso.TabIndex = 8;
             this.btnPaso.Text = "Paso";
             this.btnPaso.UseVisualStyleBackColor = true;
@@ -142,9 +145,10 @@
             // lblAviso
             // 
             this.lblAviso.AutoSize = true;
-            this.lblAviso.Location = new System.Drawing.Point(12, 197);
+            this.lblAviso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAviso.Location = new System.Drawing.Point(496, 126);
             this.lblAviso.Name = "lblAviso";
-            this.lblAviso.Size = new System.Drawing.Size(35, 13);
+            this.lblAviso.Size = new System.Drawing.Size(70, 25);
             this.lblAviso.TabIndex = 9;
             this.lblAviso.Text = "label2";
             this.lblAviso.Visible = false;
@@ -152,26 +156,28 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(145, 126);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(140, 122);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 13);
+            this.label2.Size = new System.Drawing.Size(91, 25);
             this.label2.TabIndex = 10;
             this.label2.Text = "Estado :";
             // 
             // lblestado
             // 
             this.lblestado.AutoSize = true;
-            this.lblestado.Location = new System.Drawing.Point(192, 126);
+            this.lblestado.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblestado.Location = new System.Drawing.Point(237, 122);
             this.lblestado.Name = "lblestado";
-            this.lblestado.Size = new System.Drawing.Size(10, 13);
+            this.lblestado.Size = new System.Drawing.Size(18, 25);
             this.lblestado.TabIndex = 11;
             this.lblestado.Text = ".";
             // 
             // btnInciarM
             // 
-            this.btnInciarM.Location = new System.Drawing.Point(288, 20);
+            this.btnInciarM.Location = new System.Drawing.Point(260, 22);
             this.btnInciarM.Name = "btnInciarM";
-            this.btnInciarM.Size = new System.Drawing.Size(127, 23);
+            this.btnInciarM.Size = new System.Drawing.Size(91, 23);
             this.btnInciarM.TabIndex = 12;
             this.btnInciarM.Text = "Iniciar Maquina";
             this.btnInciarM.UseVisualStyleBackColor = true;
@@ -180,36 +186,53 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(263, 126);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(318, 126);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 13);
+            this.label3.Size = new System.Drawing.Size(90, 25);
             this.label3.TabIndex = 13;
             this.label3.Text = "Pasos : ";
             // 
             // lblPasos
             // 
             this.lblPasos.AutoSize = true;
-            this.lblPasos.Location = new System.Drawing.Point(315, 126);
+            this.lblPasos.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPasos.Location = new System.Drawing.Point(414, 126);
             this.lblPasos.Name = "lblPasos";
-            this.lblPasos.Size = new System.Drawing.Size(10, 13);
+            this.lblPasos.Size = new System.Drawing.Size(18, 25);
             this.lblPasos.TabIndex = 14;
             this.lblPasos.Text = ".";
             // 
             // btnReiniciar
             // 
-            this.btnReiniciar.Location = new System.Drawing.Point(615, 19);
+            this.btnReiniciar.Location = new System.Drawing.Point(551, 23);
             this.btnReiniciar.Name = "btnReiniciar";
-            this.btnReiniciar.Size = new System.Drawing.Size(133, 23);
+            this.btnReiniciar.Size = new System.Drawing.Size(91, 23);
             this.btnReiniciar.TabIndex = 15;
             this.btnReiniciar.Text = "Reiniciar";
             this.btnReiniciar.UseVisualStyleBackColor = true;
             this.btnReiniciar.Click += new System.EventHandler(this.btnReiniciar_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // btnRapido
+            // 
+            this.btnRapido.Location = new System.Drawing.Point(357, 23);
+            this.btnRapido.Name = "btnRapido";
+            this.btnRapido.Size = new System.Drawing.Size(91, 22);
+            this.btnRapido.TabIndex = 16;
+            this.btnRapido.Text = "Automatico";
+            this.btnRapido.UseVisualStyleBackColor = true;
+            this.btnRapido.Click += new System.EventHandler(this.btnRapido_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(760, 247);
+            this.ClientSize = new System.Drawing.Size(760, 192);
+            this.Controls.Add(this.btnRapido);
             this.Controls.Add(this.btnReiniciar);
             this.Controls.Add(this.lblPasos);
             this.Controls.Add(this.label3);
@@ -252,6 +275,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblPasos;
         private System.Windows.Forms.Button btnReiniciar;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button btnRapido;
     }
 }
 
