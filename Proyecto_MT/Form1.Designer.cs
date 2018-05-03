@@ -146,7 +146,7 @@
             // 
             this.lblAviso.AutoSize = true;
             this.lblAviso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAviso.Location = new System.Drawing.Point(496, 126);
+            this.lblAviso.Location = new System.Drawing.Point(140, 157);
             this.lblAviso.Name = "lblAviso";
             this.lblAviso.Size = new System.Drawing.Size(70, 25);
             this.lblAviso.TabIndex = 9;
@@ -231,6 +231,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(760, 192);
             this.Controls.Add(this.btnRapido);
             this.Controls.Add(this.btnReiniciar);
