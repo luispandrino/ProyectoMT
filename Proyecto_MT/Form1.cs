@@ -1549,6 +1549,12 @@ namespace Proyecto_MT
             lblestado.Text = "";
             lblAviso.Text = "";
             txtCadena.Text = "";
+            numVelocidad.Value = 0;
+            RbtnCopiar.Checked = false;
+            RbtnMultiplicacion.Checked = false;
+            RbtnPalindromo.Checked = false;
+            RbtnResta.Checked = false;
+            RbtnSuma.Checked = false;
             timer1.Enabled = false;
         }
 
@@ -2940,7 +2946,19 @@ namespace Proyecto_MT
 
         private void btnRapido_Click(object sender, EventArgs e)
         {
-            timer1.Enabled = true;
+            
+            if (numVelocidad.Value == 0)
+            {
+                numVelocidad.Value = 100;
+                timer1.Interval = 100;
+                timer1.Enabled = true;
+            }
+            else
+            {
+                timer1.Interval = Convert.ToInt32(numVelocidad.Value);
+                timer1.Enabled = true;
+            }
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
