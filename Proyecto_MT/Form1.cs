@@ -35,7 +35,7 @@ namespace Proyecto_MT
                 {
                     switch (contador)
                     {
-
+                       
                         case (0):
                             if (datos[0] != "a" && datos[0] != "b" && datos[0] != "c")
                             {
